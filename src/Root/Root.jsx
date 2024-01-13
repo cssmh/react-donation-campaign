@@ -11,6 +11,7 @@ const Root = createBrowserRouter([
       children: [
         {
           path: "/",
+          loader: ()=> fetch("donation.json"),
           element: <Home></Home>,
         },
         {

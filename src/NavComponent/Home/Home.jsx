@@ -1,27 +1,17 @@
+import { useLoaderData } from "react-router-dom";
+import Banner from "./Banner";
+import ShowDonation from "./ShowDonation";
+
 const Home = () => {
+  const loaderDataAll = useLoaderData();
+
   return (
     <div>
-      <div
-        className="hero min-h-[60vh]"
-        style={{
-          backgroundImage:
-            "url(https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/banner.png)",
-        }}
-      >
-        <div className="hero-overlay bg-opacity-95 bg-white"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-xl">
-            <h1 className="mb-8 text-2xl md:text-4xl font-bold text-[#0B0B0B]">I Grow By Helping People In Need</h1>
-            <div className="flex justify-center">
-              <input
-                type="text"
-                placeholder="Search here...."
-                className="input input-bordered w-full max-w-xs"
-              />
-              <button className="btn bg-[#FF444A] px-7 text-white">Search</button>
-            </div>
-          </div>
-        </div>
+      <Banner></Banner>
+      <div className="max-w-[1200px] mx-auto my-5 lg:my-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {loaderDataAll.map((data) => (
+          <ShowDonation key={data.id} getDonation={data}></ShowDonation>
+        ))}
       </div>
     </div>
   );
