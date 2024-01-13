@@ -12,26 +12,27 @@ const ShowDonation = ({ getDonation }) => {
   } = getDonation;
 
   return (
-    <Link to={`/donation/${id}`}>
-      <div className="mx-auto">
+    <div className="mx-auto">
+      <Link to={`/details/${id}`}>
         <div className={card_background_color}>
           <img src={image} alt="" />
           <div className="p-4">
             <h1
-              className={`${category_background_color} px-1 py-[2px] w-[27%] text-xs text-center font-medium`}
+              className={`${category_background_color} ${text_color} px-1 py-[2px] w-[27%] text-xs text-center font-medium`}
             >
               {category}
             </h1>
-            <h1 className={`${text_color} font-semibold pt-1`}>{title}</h1>
+            <h1 className={`text-${text_color} font-semibold pt-1`}>{title}</h1>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
 ShowDonation.propTypes = {
   getDonation: PropTypes.object,
+  hiddenClass: PropTypes.func,
 };
 
 export default ShowDonation;

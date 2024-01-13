@@ -7,9 +7,9 @@
     "price": 290.00,
     "card_background_color": "bg-[#0052FF26]",
     "category_background_color": "bg-[#0052FF33]",
-    "text_color": "text-[#0052FF]",
+    "text_color": "[#0052FF]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Health.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
   },
   {
     "id": "2",
@@ -19,9 +19,9 @@
     "price": 300.00,
     "card_background_color": "bg-[#FF444A26]",
     "category_background_color": "bg-[#FF444A33]",
-    "text_color": "text-[#FF444A]",
+    "text_color": "[#FF444A]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Education.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
   },
   {
     "id": "3",
@@ -31,9 +31,9 @@
     "price": 200.00,
     "card_background_color": "bg-[#79C23F26]",
     "category_background_color": "bg-[#79C23F33]",
-    "text_color": "text-[#79C23F]",
+    "text_color": "[#79C23F]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Clothing.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
   },
   {
     "id": "4",
@@ -43,9 +43,9 @@
     "price": 250.00,
     "card_background_color": "bg-[#F8714726]",
     "category_background_color": "bg-[#F8714733]",
-    "text_color": "text-[#F87147]",
+    "text_color": "[#F87147]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Food.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
   },
   {
     "id": "5",
@@ -55,9 +55,9 @@
     "price": 400.00,
     "card_background_color": "bg-[#F8714726]",
     "category_background_color": "bg-[#F8714733]",
-    "text_color": "text-[#F87147]",
+    "text_color": "[#F87147]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Food.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
   },
   {
     "id": "6",
@@ -67,9 +67,9 @@
     "price": 500.00,
     "card_background_color": "bg-[#79C23F26]",
     "category_background_color": "bg-[#79C23F33]",
-    "text_color": "text-[#79C23F]",
+    "text_color": "[#79C23F]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Clothing.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
   },
   {
     "id": "7",
@@ -79,9 +79,9 @@
     "price": 150.00,
     "card_background_color": "bg-[#FF444A26]",
     "category_background_color": "bg-[#FF444A33]",
-    "text_color": "text-[#FF444A]",
+    "text_color": "[#FF444A]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Education.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
   },
   {
     "id": "8",
@@ -91,9 +91,9 @@
     "price": 290.00,
     "card_background_color": "bg-[#0052FF26]",
     "category_background_color": "bg-[#0052FF33]",
-    "text_color": "text-[#0052FF]",
+    "text_color": "[#0052FF]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Health.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
   },
   {
     "id": "9",
@@ -103,9 +103,9 @@
     "price": 290.00,
     "card_background_color": "bg-[#0052FF26]",
     "category_background_color": "bg-[#0052FF33]",
-    "text_color": "text-[#0052FF]",
+    "text_color": "[#0052FF]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Health.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204284.png"
   },
   {
     "id": "10",
@@ -115,9 +115,9 @@
     "price": 300.00,
     "card_background_color": "bg-[#FF444A26]",
     "category_background_color": "bg-[#FF444A33]",
-    "text_color": "text-[#FF444A]",
+    "text_color": "[#FF444A]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Education.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-1.png"
   },
   {
     "id": "11",
@@ -127,9 +127,9 @@
     "price": 200.00,
     "card_background_color": "bg-[#79C23F26]",
     "category_background_color": "bg-[#79C23F33]",
-    "text_color": "text-[#79C23F]",
+    "text_color": "[#79C23F]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Clothing.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287.png"
   },
   {
     "id": "12",
@@ -139,8 +139,8 @@
     "price": 450.00,
     "card_background_color": "bg-[#F8714726]",
     "category_background_color": "bg-[#F8714733]",
-    "text_color": "text-[#F87147]",
+    "text_color": "[#F87147]",
     "image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Food.png",
-    "rectangle-image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
+    "rectangle_image": "https://raw.githubusercontent.com/cssmh/react-donation-campaign/main/public/photos/Rectangle%204287-2.png"
   }
 ]
