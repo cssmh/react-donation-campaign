@@ -2,9 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/photos/Logo.png";
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-2 my-3">
+    <div className="flex justify-between items-center px-4 lg:px-2 my-3">
       <Link to="/">
-        <img className="w-1/3 md:w-2/3" src={logo} alt="" />
+        <img className="w-1/2 md:w-2/3" src={logo} alt="" />
       </Link>
       <div className="space-x-2 md:space-x-6">
         <NavLink
