@@ -30,7 +30,7 @@ const DonationCard = ({ getCardDetails }) => {
         <p style={{ color: text_color }} className="font-semibold">
           ${price}
         </p>
-        <Link to={`/details/${id}`}>
+        <Link to={`/details/${id}`} state={title}>
         <button 
           style={{ backgroundColor: text_color }}
           className="text-white font-semibold my-1 px-2 py-1 rounded-md text-sm"

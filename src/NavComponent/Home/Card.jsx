@@ -6,7 +6,7 @@ const Card = ({ getDonation }) => {
 
   return (
     <div className="mx-auto">
-      <Link to={`/details/${id}`}>
+      <Link to={`/details/${id}`} state={title}>
         <div style={{ backgroundColor: card_bg }}>
           <img src={image} alt="" />
           <div className="p-4">
