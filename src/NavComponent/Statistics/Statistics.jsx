@@ -20,8 +20,8 @@ function Statistics() {
       <div className="container-fluid mx-auto">
         <Chart
           type="pie"
-          width={1200}
-          height={400}
+          width="90%"
+          height="100%"
           series={[donationPercentage, totalDonation]}
           options={{
             labels: ["Your Donation", "Total Donation"],
