@@ -22,6 +22,7 @@ const Root = createBrowserRouter([
         },
         {
           path: "/statistics",
+          loader: ()=>fetch("/donation.json"),
           element: <Statistics></Statistics>
         },
         {
