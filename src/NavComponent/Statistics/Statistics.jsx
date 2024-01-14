@@ -24,7 +24,7 @@ function Statistics() {
           height={400}
           series={[donationPercentage, totalDonation]}
           options={{
-            labels: ["Your Donation", "Total Donation"]
+            labels: ["Your Donation", "Total Donation"],
           }}
         ></Chart>
       </div>
