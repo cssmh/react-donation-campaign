@@ -17,11 +17,11 @@ function Statistics() {
 
   return (
     <React.Fragment>
-      <div className="container-fluid mx-auto">
+      <div className="container-fluid">
         <Chart
           type="pie"
-          width="90%"
-          height="100%"
+          width="84%"
+          height={380}
           series={[donationPercentage, totalDonation]}
           options={{
             labels: ["Your Donation", "Total Donation"],
