@@ -20,7 +20,12 @@ const DonationDetails = () => {
         <div className="relative">
           <img alt="" className="w-[60%] rounded-md" src={image} />
           <div className="w-[60%] h-[87px] bg-[#0b0b0b80] absolute bottom-0">
-            <button className={`bg-${text_color} text-white p-3 rounded-lg m-5`}>Donate ${price}</button>
+            <button
+              style={{ backgroundColor: text_color }}
+              className="text-white p-3 rounded-lg m-5"
+            >
+              Donate ${price}
+            </button>
           </div>
         </div>
       </div>

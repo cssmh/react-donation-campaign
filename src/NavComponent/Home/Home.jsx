@@ -1,7 +1,7 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DonationCard from './DonationCard';
 import { useLoaderData } from "react-router-dom";
-import ShowDonation from "./ShowDonation";
 import { useEffect, useState } from "react";
 
 const Home = () => {
@@ -65,7 +65,7 @@ const Home = () => {
       </div>
       <div className="max-w-[1200px] mx-auto my-5 lg:my-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {displayDonation.map((data) => (
-          <ShowDonation key={data.id} getDonation={data}></ShowDonation>
+          <DonationCard key={data.id} getDonation={data}></DonationCard>
         ))}
       </div>
       <ToastContainer />
