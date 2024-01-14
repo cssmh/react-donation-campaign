@@ -5,10 +5,10 @@ const Card = ({ getDonation }) => {
     getDonation;
 
   return (
-    <div className="mx-auto">
+    <div className="px-3 md:px-0">
       <Link to={`/details/${id}`} state={title}>
         <div style={{ backgroundColor: card_bg }}>
-          <img src={image} alt="" />
+          <img className="w-full" src={image} alt="" />
           <div className="p-4">
             <h1
               style={{ backgroundColor: category_bg, color: text_color }}
@@ -27,7 +27,7 @@ const Card = ({ getDonation }) => {
 };
 
 Card.propTypes = {
-  getDonation: PropTypes.object
+  getDonation: PropTypes.object,
 };
 
 export default Card;

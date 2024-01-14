@@ -25,7 +25,7 @@ const DonationDetails = () => {
       <div>
         <div className="relative px-3 md:px-0">
           <img alt="" className="w-full lg:w-[60%] rounded-md" src={image} />
-          <div className="w-[60%] h-[87px] bg-[#0b0b0b80] absolute bottom-0">
+          <div className="w-[95%] lg:w-[60%] h-[87px] bg-[#0b0b0b80] absolute bottom-0">
             <button
               onClick={() => setIdToLocalStorage(id, price)}
               style={{ backgroundColor: text_color }}

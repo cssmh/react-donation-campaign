@@ -35,7 +35,7 @@ const Donation = () => {
       >
         No data available
       </p>
-      <div className="mt-12 mb-5 max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="mt-12 mb-5 max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
         {matching.slice(0, displayCard).map((singleCard) => (
           <DonationCard
             key={singleCard.id}

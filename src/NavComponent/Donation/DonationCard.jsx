@@ -14,7 +14,7 @@ const DonationCard = ({ getCardDetails }) => {
   return (
     <div
       style={{ backgroundColor: card_bg }}
-      className="flex items-center gap-4"
+      className="flex items-center gap-4 mx-1 lg:mx-0"
     >
       <div>
         <img src={rectangle_image} alt="" />
@@ -31,12 +31,13 @@ const DonationCard = ({ getCardDetails }) => {
           ${price}
         </p>
         <Link to={`/details/${id}`} state={title}>
-        <button 
-          style={{ backgroundColor: text_color }}
-          className="text-white font-semibold my-1 px-2 py-1 rounded-md text-sm"
-        >
-          View Details
-        </button></Link>
+          <button
+            style={{ backgroundColor: text_color }}
+            className="text-white font-semibold my-1 px-2 py-1 rounded-md text-sm"
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
