@@ -12,22 +12,22 @@ const Root = createBrowserRouter([
       children: [
         {
           path: "/",
-          loader: ()=>fetch("/donation.json"),
+          loader:()=>fetch("donation.json"),
           element: <Home></Home>,
         },
         {
           path: "/donation",
-          loader: ()=>fetch("/donation.json"),
+          loader:()=>fetch("/donation.json"),
           element: <Donation></Donation>
         },
         {
           path: "/statistics",
-          loader: ()=>fetch("/donation.json"),
+          loader:()=>fetch("/donation.json"),
           element: <Statistics></Statistics>
         },
         {
           path: "/details/:id",
-          loader: ()=>fetch("/donation.json"),
+          loader:()=>fetch("/donation.json"),
           element: <DonationDetails></DonationDetails>
         },
       ]
