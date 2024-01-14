@@ -1,19 +1,25 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { setDonationToLocalStorage } from "../../Utility/LocalStorage";
 
 const DonationDetails = () => {
   const [match, setMatch] = useState([]);
 
   const loaderData = useLoaderData();
-  const { id } = useParams();
+  const getId = useParams();
+  const idParams = getId.id;
   useEffect(() => {
-    if (id.length > 0) {
-      const bothMatch = loaderData.find((loadData) => loadData.id === id);
+    if (idParams.length > 0) {
+      const bothMatch = loaderData.find((loadData) => loadData.id === idParams);
       setMatch(bothMatch);
     }
-  }, [loaderData, id]);
+  }, [loaderData, idParams]);
 
-  const { image, price, title, description, text_color } = match;
+  const setIdToLocalStorage = (id, price) => {
+    setDonationToLocalStorage(parseInt(id), price);
+  };
+
+  const { id, image, price, title, description, text_color } = match;
   return (
     <div className="max-w-[1230px] mx-auto my-10">
       <div>
@@ -21,6 +27,7 @@ const DonationDetails = () => {
           <img alt="" className="w-[60%] rounded-md" src={image} />
           <div className="w-[60%] h-[87px] bg-[#0b0b0b80] absolute bottom-0">
             <button
+              onClick={() => setIdToLocalStorage(id, price)}
               style={{ backgroundColor: text_color }}
               className="text-white p-3 rounded-lg m-5"
             >

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-const DonationCard = ({ getDonation }) => {
+const Card = ({ getDonation }) => {
   const { id, image, category, title, card_bg, category_bg, text_color } =
     getDonation;
 
@@ -11,7 +11,7 @@ const DonationCard = ({ getDonation }) => {
           <img src={image} alt="" />
           <div className="p-4">
             <h1
-              style={{ backgroundColor: category_bg }}
+              style={{ backgroundColor: category_bg, color: text_color }}
               className="px-1 py-[2px] w-[27%] text-xs text-center font-medium"
             >
               {category}
@@ -26,9 +26,8 @@ const DonationCard = ({ getDonation }) => {
   );
 };
 
-DonationCard.propTypes = {
-  getDonation: PropTypes.object,
-  hiddenClass: PropTypes.func,
+Card.propTypes = {
+  getDonation: PropTypes.object
 };
 
-export default DonationCard;
+export default Card;

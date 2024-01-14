@@ -1,6 +1,6 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import DonationCard from './DonationCard';
+import DonationCard from './Card';
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 
