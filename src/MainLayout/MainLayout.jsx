@@ -1,6 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
 import { useEffect } from "react";
 
 const MainLayout = () => {
@@ -30,7 +29,6 @@ const MainLayout = () => {
       <div className="min-h-[75dvh]">
         <Outlet></Outlet>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

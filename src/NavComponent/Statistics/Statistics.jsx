@@ -17,7 +17,7 @@ function Statistics() {
 
   return (
     <React.Fragment>
-      <div className="container-fluid">
+      <div className="container-fluid mt-14">
         <Chart
           type="pie"
           width="84%"

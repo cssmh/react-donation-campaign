@@ -20,8 +20,8 @@ const Donation = () => {
   }, [getallDataFromLoader]);
 
   const handleSeeAllButton = () => {
-    setBtnShow(!btnShow);
     setDisplayCard(matching.length);
+    setBtnShow(!btnShow);
   };
 
   return (
