@@ -45,15 +45,3 @@ const DonationDetails = () => {
 };
 
 export default DonationDetails;
-
-{
-  /* <div className="max-w-[1230px] mx-auto my-10">
-      <div>
-        <img className="p-3 md:p-0 w-full md:w-[50%] rounded-b-xl" src={image} alt="" />
-      </div>
-      <div className="md:mt-4 p-5 md:p-0">
-        <h1 className="text-2xl mb-3 font-bold">{title}</h1>
-        <p className="text-gray-500">{description}</p>
-      </div>
-    </div> */
-}

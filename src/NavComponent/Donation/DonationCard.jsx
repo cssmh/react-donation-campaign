@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const DonationCard = ({ getCardDetails }) => {
-  console.log(getCardDetails);
   const {
     id,
     rectangle_image,
@@ -9,12 +9,12 @@ const DonationCard = ({ getCardDetails }) => {
     card_bg,
     category_bg,
     text_color,
-    price
+    price,
   } = getCardDetails;
   return (
     <div
       style={{ backgroundColor: card_bg }}
-      className="flex items-center gap-3"
+      className="flex items-center gap-4"
     >
       <div>
         <img src={rectangle_image} alt="" />
@@ -27,8 +27,16 @@ const DonationCard = ({ getCardDetails }) => {
           {category}
         </p>
         <h1 className="text-xl font-semibold pt-1">{title}</h1>
-        <p style={{ color: text_color}} className="font-semibold">${price}</p>
-        <button style={{ backgroundColor: text_color }} className="text-white font-semibold my-1 px-2 py-1 rounded-md text-sm">View Details</button>
+        <p style={{ color: text_color }} className="font-semibold">
+          ${price}
+        </p>
+        <Link to={`/details/${id}`}>
+        <button 
+          style={{ backgroundColor: text_color }}
+          className="text-white font-semibold my-1 px-2 py-1 rounded-md text-sm"
+        >
+          View Details
+        </button></Link>
       </div>
     </div>
   );

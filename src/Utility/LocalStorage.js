@@ -21,10 +21,4 @@ const setDonationToLocalStorage = (id, price) => {
     }
 }
 
-const removeDonationFromLocalStorage = (idToRemove) => {
-    const getExistsIdsFirst = getLocalStorage()
-    const filterToRemove = getExistsIdsFirst.filter(allId => allId !== idToRemove)
-    localStorage.setItem("donation", JSON.stringify(filterToRemove))
-}
-
-export { getLocalStorage, setDonationToLocalStorage, removeDonationFromLocalStorage }
+export { getLocalStorage, setDonationToLocalStorage }
