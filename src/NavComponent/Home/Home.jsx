@@ -1,28 +1,33 @@
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import DonationCard from './Card';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import DonationCard from "./Card";
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-    const [displayDonation, setDisplayDonation] = useState([])
+  const [displayDonation, setDisplayDonation] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchValue = e.target.search.value;
-    if(searchValue === ""){
-      setDisplayDonation(loaderDataAll)
+    if (searchValue === "") {
+      setDisplayDonation(loaderDataAll);
       toast("Input something!");
-    }else{
-      const searchItem = loaderDataAll.filter(singleData => singleData.category.toLowerCase().includes(searchValue.toLowerCase()))
-      setDisplayDonation(searchItem)
+    } else {
+      const searchItem = loaderDataAll.filter((singleData) =>
+        singleData.category.toLowerCase().includes(searchValue.toLowerCase())
+      );
+      setDisplayDonation(searchItem);
+      if (!searchItem) {
+        setDisplayDonation([]);
+      }
     }
   };
 
   const loaderDataAll = useLoaderData();
-  useEffect(()=> {
-    setDisplayDonation(loaderDataAll)
-  },[loaderDataAll])
+  useEffect(() => {
+    setDisplayDonation(loaderDataAll);
+  }, [loaderDataAll]);
   return (
     <div>
       <div
@@ -54,11 +59,15 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto my-5 lg:my-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {displayDonation.map((data) => (
-          <DonationCard key={data.id} getDonation={data}></DonationCard>
-        ))}
-      </div>
+      {displayDonation.length == 0 ? (
+        <p className="my-7 text-center text-red-500 text-xl">No match found!</p>
+      ) : (
+        <div className="max-w-[1200px] mx-auto my-5 lg:my-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {displayDonation.map((data) => (
+            <DonationCard key={data.id} getDonation={data}></DonationCard>
+          ))}
+        </div>
+      )}
       <ToastContainer />
     </div>
   );
