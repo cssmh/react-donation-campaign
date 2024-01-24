@@ -9,12 +9,12 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const searchItem = e.target.search.value;
-    if(searchItem === ""){
+    const searchValue = e.target.search.value;
+    if(searchValue === ""){
       setDisplayDonation(loaderDataAll)
       toast("Input something!");
     }else{
-      const searchItem = loaderDataAll.filter(singleData => singleData.category.toLowerCase().includes(searchItem.toLowerCase()))
+      const searchItem = loaderDataAll.filter(singleData => singleData.category.toLowerCase().includes(searchValue.toLowerCase()))
       setDisplayDonation(searchItem)
     }
   };
