@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../public/photos/Logo.png";
+import logo from "/photos/Logo.png";
 const Header = () => {
   return (
     <div className="flex justify-between items-center px-4 lg:px-2 my-3 max-w-7xl mx-auto">

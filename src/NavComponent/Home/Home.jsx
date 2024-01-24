@@ -9,22 +9,13 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const submitValue = e.target.search.value;
-    if(submitValue === "Health"){
-        setDisplayDonation(displayDonation.filter(data => data.category === "Health"))
-    }
-    else if(submitValue === "Education"){
-        setDisplayDonation(displayDonation.filter(data => data.category === "Education"))
-    }
-    else if(submitValue === "Clothing"){
-        setDisplayDonation(displayDonation.filter(data => data.category === "Clothing"))
-    }
-    else if(submitValue === "Food"){
-        setDisplayDonation(displayDonation.filter(data => data.category === "Food"))
-    }
-    else if(submitValue === ""){
-        setDisplayDonation(loaderDataAll)
-        toast("Input something!");
+    const searchItem = e.target.search.value;
+    if(searchItem === ""){
+      setDisplayDonation(loaderDataAll)
+      toast("Input something!");
+    }else{
+      const searchItem = loaderDataAll.filter(singleData => singleData.category.toLowerCase().includes(searchItem.toLowerCase()))
+      setDisplayDonation(searchItem)
     }
   };
 
